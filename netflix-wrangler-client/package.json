@@ -1,7 +1,7 @@
 {
-  "name": "eslint-example",
-  "version": "1.0.0",
-  "description": "",
+  "name": "Netflix Wrangler",
+  "version": "0.0.1",
+  "description": "Firefox extension to wrangle Netflix view, display movie details better, control sorting etc.",
   "main": "index.js",
   "devDependencies": {
     "eslint": "^6.6.0"
@@ -10,6 +10,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint ."
   },
-  "author": "",
-  "license": "ISC"
+  "author": "James Ferguson",
+  "license": "GPLv3"
 }

@@ -1,12 +1,23 @@
 {
     "manifest_version": 2,
-    "description": "Example using eslint",
-    "name": "eslint-example",
-    "version": "1.0",
-    "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/eslint-example",
+    "name": "Netflix Wrangler",
+    "description": "Sort Netflix offerings by relevance to you. Put thumb-down'd items out of the way, flag thumbs-up'd items so you know they're already watched, sort by match percentage, show main details without mousing over.",
+    "version": "0.1",
+    "homepage_url": "https://github.com/JamesFerguson/netflix_wrangler",
+
+    "icons": {
+      "32": "icons/page-32.png",
+      "48": "icons/page-48.png"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://*.netflix.com/*"],
+        "js": ["borderify.js"]
+      }
+    ],
 
     "browser_action": {
-        "default_icon": "icons/page-32.png",
         "default_popup": "popup.html"
     }
 }
